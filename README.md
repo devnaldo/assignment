@@ -1,5 +1,7 @@
 # Verdant Grove — Apartment Project Website
 
+**Live site:** https://devnaldo.github.io/assignment/
+
 A single-page marketing site for a premium 2 & 3 BHK apartment project:
 sticky navigation, full-bleed hero, highlights, project overview, residences,
 amenities, gallery, location, enquiry form and footer.
