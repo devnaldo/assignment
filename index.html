@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- EDIT: project name, location and description -->
+  <title>Verdant Grove — 2 &amp; 3 BHK Garden Residences</title>
+  <meta name="description" content="Verdant Grove is a collection of 2 and 3 BHK garden residences set across 6.4 acres of landscaped calm in Sector 14.">
+  <meta name="theme-color" content="#1F3D2B">
+
+  <!-- Google Fonts: Playfair Display for headings, Poppins for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Set before first paint so scroll-reveal styles only apply with JS -->
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Mobile menu + scroll reveal (see script.js) -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================================
+       01 — HEADER & NAVIGATION
+       Sticky bar. Under 768px the menu collapses into a drawer
+       opened by the toggle button and driven by script.js.
+       ============================================================ -->
+  <header class="site-header">
+    <div class="container header__inner">
+
+      <!-- Logo / branding -->
+      <a class="logo" href="#home">
+        <span class="logo__mark" aria-hidden="true">VG</span>
+        <span class="logo__text">
+          <!-- EDIT: project name -->
+          <span class="logo__name">Verdant Grove</span>
+          <span class="logo__sub">Sector 14 · Now launching</span>
+        </span>
+      </a>
+
+      <!-- Mobile menu toggle (button, driven by script.js) -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <!-- Primary navigation -->
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#residences">Residences</a></li>
+          <li><a href="#amenities">Amenities</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#location">Location</a></li>
+        </ul>
+
+        <div class="nav__contact">
+          <!-- EDIT: phone number -->
+          <a class="nav__phone" href="tel:+919000000000">+91 90000 00000</a>
+          <a class="btn btn--outline-green" href="#enquiry">Book a visit</a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         02 — HERO
+         Full-bleed image with a forest-green scrim so the ivory
+         type stays legible over the warm sunset render.
+         ============================================================ -->
+    <section class="hero" id="home">
+      <img class="hero__img"
+           src="images/1.jpg"
+           alt="Illuminated apartment towers and the entrance gate of Verdant Grove at dusk, seen from the main road"
+           width="1280" height="720" fetchpriority="high">
+      <div class="hero__scrim" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <p class="eyebrow eyebrow--light">Now launching · Phase I</p>
+
+        <h1 class="hero__title">Where the city<br>slows down.</h1>
+
+        <p class="hero__lead">
+          Two and three bedroom garden residences across 6.4 acres of landscaped
+          calm — minutes from the city, a world away from its pace.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--gold" href="#residences">Explore residences</a>
+          <a class="btn btn--ghost-light" href="#enquiry">Book a site visit</a>
+        </div>
+
+        <!-- Quick facts -->
+        <dl class="hero__stats">
+          <div class="stat">
+            <dt>Configuration</dt>
+            <dd>2 &amp; 3 BHK</dd>
+          </div>
+          <div class="stat">
+            <dt>Carpet area</dt>
+            <dd>1,240 – 1,860 sq ft</dd>
+          </div>
+          <div class="stat">
+            <dt>Landscaped estate</dt>
+            <dd>6.4 acres</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         03 — PROJECT HIGHLIGHTS
+         Six cards. One column on mobile, two at 768px, three at 1024px.
+         ============================================================ -->
+    <section class="section section--ivory" id="highlights">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow">Why Verdant Grove</p>
+          <h2 class="section-title">Six reasons the address holds its value</h2>
+          <p class="section-lead">
+            Low-rise towers, wide open spaces and a location that keeps its
+            promise long after handover.
+          </p>
+        </div>
+
+        <ul class="highlights">
+          <li class="highlight reveal">
+            <p class="highlight__figure">6.4</p>
+            <h3 class="highlight__title">Acres of land</h3>
+            <p class="highlight__text">Six low-rise towers, set well apart from one another.</p>
+          </li>
+          <li class="highlight reveal">
+            <p class="highlight__figure">72%</p>
+            <h3 class="highlight__title">Open space</h3>
+            <p class="highlight__text">Gardens, courts and green buffers around every block.</p>
+          </li>
+          <li class="highlight reveal">
+            <p class="highlight__figure">18,000</p>
+            <h3 class="highlight__title">Sq ft clubhouse</h3>
+            <p class="highlight__text">Lounge, pool and fitness under a single roof.</p>
+          </li>
+          <li class="highlight reveal">
+            <p class="highlight__figure">2 &amp; 3</p>
+            <h3 class="highlight__title">BHK homes</h3>
+            <p class="highlight__text">Cross-ventilated plans with wide, deep balconies.</p>
+          </li>
+          <li class="highlight reveal">
+            <p class="highlight__figure">5 min</p>
+            <h3 class="highlight__title">To the metro</h3>
+            <p class="highlight__text">Direct access to the arterial road network.</p>
+          </li>
+          <li class="highlight reveal">
+            <p class="highlight__figure">2027</p>
+            <h3 class="highlight__title">Possession</h3>
+            <p class="highlight__text">Phased handover, RERA registered project.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         04 — PROJECT OVERVIEW
+         Two columns from 1024px: copy + specs, framed image.
+         ============================================================ -->
+    <section class="section section--card" id="overview">
+      <div class="container overview">
+        <div class="overview__text reveal">
+          <p class="eyebrow">01 — The project</p>
+          <h2 class="section-title">A quieter kind of address, built around a garden</h2>
+
+          <p class="overview__para">
+            Verdant Grove is planned as a place to come home slowly. Six
+            low-rise blocks wrap a central garden court, with the stilt level
+            left open so air and light move freely between the towers.
+          </p>
+          <p class="overview__para">
+            Homes are arranged to catch morning light and evening cross
+            breezes, and every living room opens onto a balcony deep enough to
+            sit out on. Materially, the palette stays warm and restrained —
+            beige stone, dark metal, and a great deal of green.
+          </p>
+
+          <ul class="spec-list">
+            <li><span>Land area</span><span>6.4 acres</span></li>
+            <li><span>Configuration</span><span>2 &amp; 3 BHK</span></li>
+            <li><span>Towers</span><span>6 blocks · G + 5</span></li>
+            <li><span>Possession</span><span>December 2027</span></li>
+          </ul>
+        </div>
+
+        <figure class="overview__media reveal">
+          <!-- wrapper keeps the offset gold frame tied to the photo, not the caption -->
+          <div class="overview__frame">
+            <img src="images/7.jpg"
+                 alt="Front elevation of the Verdant Grove residences at sunset, seen across the street"
+                 width="1280" height="720" loading="lazy">
+          </div>
+          <figcaption>Phase I frontage · Sector 14</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         05 — RESIDENCES (2 BHK / 3 BHK)
+         Dark forest-green band, the page's single strong colour break.
+         Cards are typographic; plans are placeholder SVGs to replace.
+         ============================================================ -->
+    <section class="section section--green" id="residences">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow eyebrow--light">02 — Residences</p>
+          <h2 class="section-title section-title--light">Two plans. Both open to the garden.</h2>
+          <p class="section-lead section-lead--light">
+            Every home is corner-blessed with light and cross ventilation.
+            Choose the scale that fits the way you live.
+          </p>
+        </div>
+
+        <div class="residences">
+
+          <!-- 2 BHK -->
+          <article class="residence reveal">
+            <p class="residence__tag">Garden residence</p>
+            <h3 class="residence__title"><span>2</span> BHK</h3>
+            <p class="residence__area">1,240 – 1,390 sq ft <span>carpet</span></p>
+
+            <figure class="residence__figure">
+              <!-- EDIT: replace this sketch with the actual 2 BHK floor plan -->
+              <svg class="residence__plan" viewBox="0 0 220 150" aria-hidden="true">
+                <rect x="1" y="1" width="218" height="148" rx="1"/>
+                <path d="M118 1v86M118 87h101M1 98h74M75 98v52"/>
+                <path d="M44 1v34M44 35h74"/>
+                <rect class="residence__plan-accent" x="168" y="1" width="51" height="86" rx="1"/>
+              </svg>
+              <figcaption>Indicative plan · not to scale</figcaption>
+            </figure>
+
+            <ul class="residence__features">
+              <li>Two bedrooms, two bathrooms</li>
+              <li>Balcony facing the central garden</li>
+              <li>Cross-ventilated living and dining</li>
+              <li>Utility area and covered parking</li>
+            </ul>
+
+            <a class="btn btn--green btn--full" href="#enquiry">Enquire about 2 BHK</a>
+          </article>
+
+          <!-- 3 BHK -->
+          <article class="residence reveal">
+            <p class="residence__tag">Terrace residence</p>
+            <h3 class="residence__title"><span>3</span> BHK</h3>
+            <p class="residence__area">1,680 – 1,860 sq ft <span>carpet</span></p>
+
+            <figure class="residence__figure">
+              <!-- EDIT: replace this sketch with the actual 3 BHK floor plan -->
+              <svg class="residence__plan" viewBox="0 0 220 150" aria-hidden="true">
+                <rect x="1" y="1" width="218" height="148" rx="1"/>
+                <path d="M96 1v72M96 73h123M1 84h59M60 84v66M132 73v77"/>
+                <rect class="residence__plan-accent" x="132" y="1" width="87" height="72" rx="1"/>
+              </svg>
+              <figcaption>Indicative plan · not to scale</figcaption>
+            </figure>
+
+            <ul class="residence__features">
+              <li>Three bedrooms, three bathrooms</li>
+              <li>Two balconies, courtyard-facing</li>
+              <li>Separate dining and study nook</li>
+              <li>Utility area and two covered parks</li>
+            </ul>
+
+            <a class="btn btn--green btn--full" href="#enquiry">Enquire about 3 BHK</a>
+          </article>
+
+        </div>
+
+        <p class="residences__note">
+          Prices on request · Stamp duty, registration and GST extra ·
+          <a href="#enquiry">Request the full brochure</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         06 — AMENITIES
+         Tall image tile + icon grid. Two columns from 1024px.
+         ============================================================ -->
+    <section class="section section--ivory" id="amenities">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow">03 — Amenities</p>
+          <h2 class="section-title">Everything within a short walk</h2>
+          <p class="section-lead">
+            Shared spaces are spread through the estate rather than stacked in
+            one corner, so the garden stays quiet and the clubhouse stays close.
+          </p>
+        </div>
+
+        <div class="amenities">
+          <figure class="amenities__media reveal">
+            <img src="images/5.jpg"
+                 alt="Paved pedestrian walkway running between the apartment blocks, lined with planting and lamp posts"
+                 width="1280" height="720" loading="lazy">
+          </figure>
+
+          <ul class="amenities__grid">
+            <li class="amenity reveal">
+              <span class="amenity__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-5 7 5v11M10 21v-5h4v5"/></svg>
+              </span>
+              <h3 class="amenity__title">Clubhouse &amp; lounge</h3>
+              <p class="amenity__text">18,000 sq ft of indoor calm</p>
+            </li>
+            <li class="amenity reveal">
+              <span class="amenity__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M2 16c2.5 2 4.5 2 7 0s4.5-2 7 0 2.5 2 6 0M2 20c2.5 2 4.5 2 7 0s4.5-2 7 0 2.5 2 6 0M12 4v6M8 7h8"/></svg>
+              </span>
+              <h3 class="amenity__title">Lap pool</h3>
+              <p class="amenity__text">Temperature controlled, 25 m</p>
+            </li>
+            <li class="amenity reveal">
+              <span class="amenity__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 8v8M2 10v4M20 8v8M22 10v4M4 12h16M8 9v6M16 9v6"/></svg>
+              </span>
+              <h3 class="amenity__title">Fitness studio</h3>
+              <p class="amenity__text">Equipment and free weights</p>
+            </li>
+            <li class="amenity reveal">
+              <span class="amenity__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg>
+              </span>
+              <h3 class="amenity__title">Yoga deck</h3>
+              <p class="amenity__text">Open-air, facing the garden</p>
+            </li>
+            <li class="amenity reveal">
+              <span class="amenity__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="8" cy="9" r="4"/><rect x="13" y="5" width="8" height="8" rx="1"/><path d="M4 20h16"/></svg>
+              </span>
+              <h3 class="amenity__title">Children&rsquo;s play</h3>
+              <p class="amenity__text">Shaded, rubber-surfaced deck</p>
+            </li>
+            <li class="amenity reveal">
+              <span class="amenity__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 21c0-6 3.5-10 9-11-1 6-4 10-9 11zM12 21C12 15 8.5 11 3 10c1 6 4 10 9 11z"/></svg>
+              </span>
+              <h3 class="amenity__title">Landscaped gardens</h3>
+              <p class="amenity__text">1.2 acres of planting</p>
+            </li>
+            <li class="amenity reveal">
+              <span class="amenity__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 16v-3l2-5h12l2 5v3M4 13h16"/><circle cx="7.5" cy="17" r="1.5"/><circle cx="16.5" cy="17" r="1.5"/></svg>
+              </span>
+              <h3 class="amenity__title">Visitor parking</h3>
+              <p class="amenity__text">Surface and covered bays</p>
+            </li>
+            <li class="amenity reveal">
+              <span class="amenity__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.4 8-8 9-4.6-1-8-4-8-9V6l8-3zM9 12l2 2 4-4"/></svg>
+              </span>
+              <h3 class="amenity__title">24×7 security</h3>
+              <p class="amenity__text">Gated entry with CCTV</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         07 — GALLERY
+         Responsive mosaic: 1 column, then 2 at 768px,
+         then a 4-column grid with spans at 1024px.
+         ============================================================ -->
+    <section class="section section--card" id="gallery">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow">04 — Gallery</p>
+          <h2 class="section-title">The estate, as it will feel</h2>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--feature reveal">
+            <img src="images/3.jpg"
+                 alt="The landscaped central courtyard framed by two residential wings under a sunset sky"
+                 width="1280" height="720" loading="lazy">
+            <figcaption>The central garden court</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal">
+            <img src="images/2.jpg"
+                 alt="Street-side view of the apartment facades with balconies and boundary landscaping"
+                 width="1280" height="720" loading="lazy">
+            <figcaption>Phase I frontage</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal">
+            <img src="images/4.jpg"
+                 alt="Elevated view of the courtyard lawn, seating and stilt-level parking beneath the blocks"
+                 width="1280" height="720" loading="lazy">
+            <figcaption>Courtyard and stilt parking</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal">
+            <img src="images/6.jpg"
+                 alt="Aerial view of the full township beside the main road, surrounded by green cover"
+                 width="1280" height="720" loading="lazy">
+            <figcaption>Master layout · 6.4 acres</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         08 — LOCATION & CONNECTIVITY
+         Distance list + a CSS-built map placeholder (no external
+         map tiles, no iframe). Replace with a static map if wanted.
+         ============================================================ -->
+    <section class="section section--ivory" id="location">
+      <div class="container location">
+        <div class="location__text reveal">
+          <p class="eyebrow">05 — Location</p>
+          <h2 class="section-title">Connected, without the noise</h2>
+          <p class="section-lead">
+            Sector 14 sits off the arterial road, close enough for the daily
+            commute and far enough that the garden stays quiet at night.
+          </p>
+
+          <ul class="distance-list">
+            <li><span class="distance-list__place">International school</span><span class="distance-list__km">1.8 km</span></li>
+            <li><span class="distance-list__place">Outer Ring Road</span><span class="distance-list__km">2.4 km</span></li>
+            <li><span class="distance-list__place">Metro station · Line 2</span><span class="distance-list__km">3.1 km</span></li>
+            <li><span class="distance-list__place">Multispecialty hospital</span><span class="distance-list__km">3.6 km</span></li>
+            <li><span class="distance-list__place">City mall</span><span class="distance-list__km">4.2 km</span></li>
+            <li><span class="distance-list__place">Airport</span><span class="distance-list__km">22 km</span></li>
+          </ul>
+        </div>
+
+        <!-- EDIT: swap for a static map image if preferred -->
+        <figure class="map-card reveal">
+          <div class="map-card__canvas" aria-hidden="true">
+            <span class="map-card__road map-card__road--a"></span>
+            <span class="map-card__road map-card__road--b"></span>
+            <span class="map-card__pin"></span>
+          </div>
+          <figcaption>
+            <span class="map-card__label">Verdant Grove · Sector 14</span>
+            <span class="map-card__note">Indicative map, not to scale</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         09 — ENQUIRY FORM
+         Green band, ivory form card. Client-side validation only;
+         point the form action at your own handler when going live.
+         ============================================================ -->
+    <section class="section section--green" id="enquiry">
+      <div class="container enquiry">
+        <div class="enquiry__intro reveal">
+          <p class="eyebrow eyebrow--light">06 — Enquire</p>
+          <h2 class="section-title section-title--light">Book a private walkthrough</h2>
+          <p class="section-lead section-lead--light">
+            Visit the site office to walk the model apartment and see the
+            garden court. We&rsquo;ll call ahead to confirm a time that suits you.
+          </p>
+
+          <ul class="enquiry__contact">
+            <li>
+              <span class="enquiry__label">Site office</span>
+              <!-- EDIT: phone number -->
+              <a href="tel:+919000000000">+91 90000 00000</a>
+            </li>
+            <li>
+              <span class="enquiry__label">Email</span>
+              <!-- EDIT: email address -->
+              <a href="mailto:sales@verdantgrove.example">sales@verdantgrove.example</a>
+            </li>
+            <li>
+              <span class="enquiry__label">Open</span>
+              <span>Daily, 10 am – 7 pm</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- EDIT: point action at your form handler before launch -->
+        <form class="enquiry__form reveal" action="#" method="post">
+          <div class="form__grid">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+91 00000 00000" required>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="field">
+              <label for="unit">Unit type</label>
+              <select id="unit" name="unit" required>
+                <option value="">Select a configuration</option>
+                <option value="2bhk">2 BHK</option>
+                <option value="3bhk">3 BHK</option>
+                <option value="either">Either</option>
+              </select>
+            </div>
+
+            <div class="field field--full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="3" placeholder="Preferred date and time to visit"></textarea>
+            </div>
+          </div>
+
+          <button class="btn btn--gold btn--full" type="submit">Request a call back</button>
+
+          <p class="form__note">
+            By submitting you agree to be contacted about this project.
+          </p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       10 — FOOTER
+       Deep green, four columns on desktop, stacked on mobile.
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+
+      <div class="footer__brand">
+        <a class="logo logo--footer" href="#home">
+          <span class="logo__mark" aria-hidden="true">VG</span>
+          <span class="logo__text">
+            <span class="logo__name">Verdant Grove</span>
+            <span class="logo__sub">Sector 14</span>
+          </span>
+        </a>
+        <p class="footer__blurb">
+          Two and three bedroom garden residences across 6.4 acres.
+          <!-- EDIT: developer name -->
+          A project by Verdant Developments.
+        </p>
+
+        <ul class="socials">
+          <li>
+            <a href="#" aria-label="Verdant Grove on Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Verdant Grove on Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h-2a4 4 0 0 0-4 4v3H6v4h3v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h2z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Verdant Grove on LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 10v10M8 6v.01M12 20v-6a4 4 0 0 1 8 0v6"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Verdant Grove on YouTube">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="3"/><path d="M11 10l4 2-4 2z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="footer__col" aria-label="Explore">
+        <h2 class="footer__heading">Explore</h2>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#residences">Residences</a></li>
+          <li><a href="#amenities">Amenities</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#location">Location</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__col" aria-label="Residences">
+        <h2 class="footer__heading">Residences</h2>
+        <ul>
+          <li><a href="#residences">2 BHK homes</a></li>
+          <li><a href="#residences">3 BHK homes</a></li>
+          <li><a href="#enquiry">Floor plans</a></li>
+          <li><a href="#enquiry">Payment plan</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h2 class="footer__heading">Visit</h2>
+        <!-- EDIT: address and contact details -->
+        <address class="footer__address">
+          Site office, Sector 14<br>
+          North Ridge Road<br>
+          <a href="tel:+919000000000">+91 90000 00000</a><br>
+          <a href="mailto:sales@verdantgrove.example">sales@verdantgrove.example</a>
+        </address>
+      </div>
+
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; 2026 Verdant Grove. All rights reserved.</p>
+      <!-- EDIT: RERA registration number -->
+      <p class="footer__rera">RERA: PRM/KA/RERA/0000/000/PR/000000</p>
+      <ul class="footer__legal">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
