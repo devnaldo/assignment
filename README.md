@@ -16,6 +16,41 @@ framework, no build step, no dependencies, no `npm install`.
 
 ---
 
+## Screenshots
+
+Captured from the live deployment at [devnaldo.github.io/assignment](https://devnaldo.github.io/assignment/).
+
+### Desktop — 1440px
+
+<img src="screenshots/desktop1.png" alt="Home page hero: sticky navigation, headline in Playfair Display, two call-to-action buttons and a key facts row">
+
+*Hero — sticky navigation, full-bleed render and the primary calls to action.*
+
+<img src="screenshots/desktop2.png" alt="Project overview section with body copy, a specification list and a framed sunset photograph">
+
+*Overview — copy, specification list and the offset-framed photograph.*
+
+<img src="screenshots/desktop3.png" alt="Gallery section with a large feature image beside two smaller tiles">
+
+*Gallery — the feature-and-thumbnail mosaic.*
+
+### Mobile — 375px
+
+| Hero | Amenities | Gallery |
+|---|---|---|
+| <img src="screenshots/mobile1.png" width="200" alt="Mobile hero showing the hamburger menu, stacked buttons and key facts"> | <img src="screenshots/mobile2.png" width="200" alt="Mobile amenities section heading above a walkway photograph"> | <img src="screenshots/mobile3.png" width="200" alt="Mobile gallery tiles with captions visible"> |
+
+*Single-column layout, drawer navigation and gallery captions that stay visible on touch screens.*
+
+### Full-page mockup
+
+<p align="center"><img src="screenshots/mockup.png" width="260" alt="Full-page design mockup of the site with green placeholder blocks instead of photographs"></p>
+
+<p align="center"><em>Design mockup of the complete page. The green blocks are image
+placeholders from the design stage, not live content.</em></p>
+
+---
+
 ## Running it
 
 There is nothing to compile. Either option works:
@@ -57,6 +92,14 @@ apartment-website/
 │   ├── 5.jpg           Amenities
 │   ├── 6.jpg           Gallery — master layout
 │   └── 7.jpg           Overview
+├── screenshots/        Images used in this README
+│   ├── desktop1.png    Hero
+│   ├── desktop2.png    Overview
+│   ├── desktop3.png    Gallery
+│   ├── mobile1.png     Mobile hero
+│   ├── mobile2.png     Mobile amenities
+│   ├── mobile3.png     Mobile gallery
+│   └── mockup.png      Full-page design mockup
 ├── AGENTS.md           Project brief and build rules
 ├── README.md
 └── .gitignore
